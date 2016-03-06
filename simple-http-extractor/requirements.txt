@@ -1,0 +1,5 @@
+# Install requirements with `pip3 install -r requirements.txt`
+
+coloredlogs >= 0.8
+humanize >= 0.5.1
+python-magic >= 0.4.6
