@@ -15,10 +15,13 @@ Very simple tool I wrote for single use, when accidently erased the full project
 It might come in use some time for anybody. Needs some tuning, no performance measurements taken.
 
 ## HTTP File Extract
+Lang: Py3
+
 Another yet simple script, that extracts files embedded inside stored-email files or raw HTTP responses.
 
 ## Arduino Morse Beeper w/Codegen
 Time spent: 2hr
+Lang: Py3, C
 Status: almost all features working, no thorough testing
 
 A simple Morse encoder with static sentences. Should take the index of a sentence to transmit from external DIP-switch,
@@ -28,3 +31,11 @@ This sketch comes with simplistic code generator that takes the dict of characte
 it into condensed binary representation as 2 tables: one for the Morse sequences themselves, and other one for sequence 
 lengths. The charactes in these tables are sorted by their ASCII-code (got with `ord` function), and written in sequence.
 The selection of particular character code is made with generated `if` operator.
+
+## LJPromo Dumper
+Time spent: ~3hr
+Status: working
+Dep: tornado-web
+
+One-time script used to gather the promoted livejournals for a specific interval. Consists of 2 parts: a script injected
+through browser console, and a tiny web-server that puts the data from incoming requests into SQLite database.
